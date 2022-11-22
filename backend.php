@@ -5,19 +5,6 @@
 	if(isset($_POST['action'])){
 		switch($_POST['action']){
 			case 1:
-				// echo json_encode(array(
-				// 	"action"=>$_POST['action'],
-				// 	"fname"=>$_POST['fname'],
-				// 	"mname"=>$_POST['mname'],
-				// 	"lname"=>$_POST['lname'],
-				// 	"khatiyan"=>$_POST['khatiyan'],
-				// 	"dag"=>$_POST['dag'],
-				// 	"plot"=>$_POST['plot'],
-				// 	"area"=>$_POST['area'],
-				// 	"area_under"=>$_POST['area_under'],
-				// 	"tax"=>$_POST['tax']
-				// ));
-
 				if(isset($_POST['fname']) 
 					&& isset($_POST['mname'])
 					&& isset($_POST['lname'])

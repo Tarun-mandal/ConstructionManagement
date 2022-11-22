@@ -6,9 +6,9 @@ This repository is a website for Construction Management.
 
 Following technologies are used to develop this website:
 
-| Frontend                                                                                | Backend | Database |
-| --------------------------------------------------------------------------------------- | ------- | -------- |
-| i) HTML.<br />ii) Bootstrap - CSS Framework.<br />iii) AngularJS - JavaScript Framework | PHP     | MongoDB  |
+| Frontend                                                                                                                | Backend              | Database                  |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------------- |
+| i) HTML.<br />ii) Bootstrap - CSS Framework. (Version 5.2.2)<br />iii) AngularJS - JavaScript Framework (Version 1.8.2) | PHP (Version 8.1.10) | MongoDB (Version 5.0.13)) |
 
 # Prerequisites
 
