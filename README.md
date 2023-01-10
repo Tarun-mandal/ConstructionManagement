@@ -32,7 +32,7 @@ Visit https://www.apachefriends.org to download the latest version of XAMPP.
 
 Composer is an application-level dependency manager for the PHP programming language that provides a standard format for managing dependencies of PHP software and required libraries.
 
-It is similar to Node Package Manager(NPM) of Node.js
+It is similar to Node Package Manager (NPM) of Node.js
 
 Visit https://getcomposer.org/download to download the latest version of Composer.
 
@@ -42,16 +42,28 @@ By default, PHP works with MySQL Database. To work with MongoDB, we need to inst
 
 Visit https://www.php.net/manual/en/set.mongodb.php to  download the driver extension and follow the steps mentioned.
 
-#### iv) Download MongoDB Library:
+#### iv) Install Dependencies:
 
-After the above steps are completed, we need to run this command
+After all the above steps are followed, we need to install dependencies using Composer. Run this command at the root of the project folder:
 
-`composer require mongodb/mongodb`
+```
+composer install
+```
 
-*Remember, run this command at the root of the directory. Otherwise, it won't work.*
+#### v) Configuring Environment Variables:
 
-*For example, if your website is located at c:\\xampp\htdocs\\`<project-folder>`, get inside the  `<project-folder>`  and run the command.*
+Environment Variables are used to store sensitive data, such as Database access credentials, secret keys for APIs.
 
-In case the directory has composer.lock and composer.json files, you need to run this command
+To configure environment variables, we create `.env` File at the project folder root.
 
-`composer install`
+The content of the `.env` file should be like
+
+```
+URI=<mongodb-uri>
+```
+
+For example, if your mongodb URI is `mongodb://localhost:27017`, the `.env` file content should be 
+
+```
+URI=mongodb://localhost:27017
+```
