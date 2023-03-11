@@ -3,9 +3,15 @@
     require_once __DIR__.'/vendor/mongodb/mongodb/src/functions.php';
     require_once __DIR__.'/constants.php';
 
-    $url = "mongodb://localhost:27017";
+    // Loading Environment Variables
+    $dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
+    $dotenv->load();
+
+    // Using Environment Variables
+    $uri = $_ENV["URI"];
+    
     // Instantiating MongoDB Client
-    $con = new MongoDB\Client($url);
+    $con = new MongoDB\Client($uri);
 
     if(!$con)
         die("Cannot connect to Server");
